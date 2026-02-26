@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7289CD"> <!-- Fondo morado -->
+
+
+
+
+
+    <!-- LOGO -->
+    <ImageView
+        android:id="@+id/LogoPrincipal"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/logo_app"
+        android:src="@drawable/ic_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- NOMBRE APP -->
+    <TextView
+        android:id="@+id/TituloPrincipalApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/nombredelaapp"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/LogoPrincipal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- DESCRIPCIÓN -->
+    <TextView
+        android:id="@+id/tvDescripcionIntro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/inicia_una_nueva_aventura_con_nombredelaapp_y_descubre_una_nueva_forma_de_ver_el_mundo"
+        android:textColor="@android:color/black"
+        android:textSize="23sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/TituloPrincipalApp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- BOTÓN -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnComienzaIntro"
+        android:layout_width="235dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="184dp"
+        android:text="@string/text_button"
+        android:textSize="35sp"
+        android:textColor="#E24A3B"
+        app:backgroundTint="@android:color/white"
+        app:cornerRadius="30dp"
+        app:strokeColor="#E24A3B"
+        app:strokeWidth="2dp"
+        app:layout_constraintTop_toBottomOf="@id/tvDescripcionIntro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- REGÍSTRATE -->
+    <TextView
+        android:id="@+id/tvRegistrateIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/registrate_text_intro"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/btnComienzaIntro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Talle2_JuanMorales</string>
+    <string name="text_button">Comienza</string>
+    <string name="logo_app">Logo</string>
+    <string name="logo_de_la_app_contente_description">Logo de la app</string>
+    <string name="no_tienes_cuenta_reg_strate">No tienes cuenta? Regístrate</string>
+    <string name="ingresa_con_google">Ingresa con Google</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="primer_campo">Primer campo</string>
+    <string name="segundo_campo">Segundo campo</string>
+    <string name="nombredelaapp">NombreDeLaApp</string>
+    <string name="todo">TODO</string>
+    <string name="recupera_tu_contrase_a">Recupera Tu Contraseña</string>
+    <string name="la_aventura_est_por_iniciar_por_favor_inicia_sesi_n">La aventura está por iniciar,\npor favor inicia sesión</string>
+    <string name="my_name">Juan David Morales Arango</string>
+    <string name="nombredelaapp_main">NombreDeLaApp</string>
+    <string name="inicia_una_nueva_aventura_con_nombredelaapp_y_descubre_una_nueva_forma_de_ver_el_mundo">Inicia una nueva aventura con NombreDeLaApp y descubre una nueva forma de ver el mundo</string>
+    <string name="registrate_text_intro">Regístrate</string>
+</resources>
