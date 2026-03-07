@@ -3,7 +3,8 @@
     <string name="text_button">Comienza</string>
     <string name="logo_app">Logo</string>
     <string name="logo_de_la_app_contente_description">Logo de la app</string>
-    <string name="no_tienes_cuenta_reg_strate">No tienes cuenta? Regístrate</string>
+    <string name="no_tienes_cuenta">No tienes cuenta?</string>
+    <string name="registrate">Regístrate</string>
     <string name="ingresa_con_google">Ingresa con Google</string>
     <string name="ingresar">Ingresar</string>
     <string name="primer_campo">Primer campo</string>
@@ -11,9 +12,21 @@
     <string name="nombredelaapp">NombreDeLaApp</string>
     <string name="todo">TODO</string>
     <string name="recupera_tu_contrase_a">Recupera Tu Contraseña</string>
-    <string name="la_aventura_est_por_iniciar_por_favor_inicia_sesi_n">La aventura está por iniciar,\npor favor inicia sesión</string>
+    <string name="mensaje_bienvenida_login">La aventura está por iniciar,\npor favor inicia sesión</string>
     <string name="my_name">Juan David Morales Arango</string>
     <string name="nombredelaapp_main">NombreDeLaApp</string>
     <string name="inicia_una_nueva_aventura_con_nombredelaapp_y_descubre_una_nueva_forma_de_ver_el_mundo">Inicia una nueva aventura con NombreDeLaApp y descubre una nueva forma de ver el mundo</string>
     <string name="registrate_text_intro">Regístrate</string>
+    <string name="titulo_formulario_registro">Formulario de Registro</string>
+    <string name="nombre_completo">Nombres Completos</string>
+    <string name="apellidos_completos">Apellidos Completos</string>
+    <string name="correo_electronico">Correo Electronico</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="repita_la_contraseña">Repita la Contraseña</string>
+    <string name="mensajeNombreCompleto_Input">Digite su nombre completo</string>
+    <string name="mensajeApellidosCompletos_Input">Digite sus apellidos completos</string>
+    <string name="mensajeCorreo_Input">Digite su correo electronico</string>
+    <string name="mensajeContraseña_Input">Digite su contraseña</string>
+    <string name="mensajeRepitaContraseña_Input">Repita la contraseña</string>
+
 </resources>
