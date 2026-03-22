@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -10,17 +11,17 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
 
         <!-- LOGO DE LA APP -->
         <ImageView
             android:id="@+id/LogoPrincipal"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginLeft="15dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="15dp"
             android:layout_marginTop="20dp"
-            android:layout_gravity="left"
             android:src="@drawable/ic_logo" />
 
         <!-- NOMBRE APP -->
@@ -28,191 +29,197 @@
             android:id="@+id/TituloPrincipalApp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
             android:text="@string/nombredelaapp"
             android:textColor="@android:color/white"
             android:textSize="30sp"
-            android:textStyle="bold"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="30dp"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 
-    <!--CONTENEDOR PRINCIPAL FORMULARIO REGISTRO-->
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="20dp">
-        <!--TITULO FORMULARIO-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/titulo_formulario_registro"
-            android:textSize="25sp"
-            android:textColor="@android:color/white"
-            android:layout_marginLeft="5dp"
-            />
-        <!--TITULO NOMBRE COMPLETO-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:layout_marginLeft="8dp"
-            android:text="@string/nombre_completo"
-            />
-        <!--INPUT NOMBRE COMPLETO-->
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="400dp"
-            android:layout_height="48dp"
-            android:layout_marginLeft="5dp"
-            android:background="@drawable/ic_input_rounded"
-            android:padding="12dp"
-            android:textColor="#000000"
-            android:textColorHint="#888888"
-            android:hint="@string/mensajeNombreCompleto_Input"
-            />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
 
 
-        <!--TITULO APELLIDOS COMPLETOS-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:layout_marginLeft="8dp"
-            android:text="@string/apellidos_completos"
-            />
-        <!--INPUT APELLIDOS COMPLETOS-->
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="400dp"
-            android:layout_height="48dp"
-            android:layout_marginLeft="5dp"
-            android:background="@drawable/ic_input_rounded"
-            android:padding="12dp"
-            android:textColor="#000000"
-            android:textColorHint="#888888"
-            android:hint="@string/mensajeApellidosCompletos_Input"
-            />
-
-        <!--TITULO CORREO-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:layout_marginLeft="8dp"
-            android:text="@string/correo_electronico"
-            />
-        <!--INPUT CORREO-->
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="400dp"
-            android:layout_height="48dp"
-            android:layout_marginLeft="5dp"
-            android:background="@drawable/ic_input_rounded"
-            android:padding="12dp"
-            android:textColor="#000000"
-            android:textColorHint="#888888"
-            android:hint="@string/mensajeCorreo_Input"
-            />
-
-
-        <!--TITULO CONTRASEÑA-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:layout_marginLeft="8dp"
-            android:text="@string/contraseña"
-            />
-        <!--INPUT CONTRASEÑA-->
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="400dp"
-            android:layout_height="48dp"
-            android:layout_marginLeft="5dp"
-            android:background="@drawable/ic_input_rounded"
-            android:padding="12dp"
-            android:textColor="#000000"
-            android:textColorHint="#888888"
-            android:hint="@string/mensajeContraseña_Input"
-            />
-
-        <!--TITULO REPITA CONTRASEÑA-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:layout_marginLeft="8dp"
-            android:text="@string/repita_la_contraseña"
-            />
-        <!--INPUT REPITA CONTRASEÑA-->
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="400dp"
-            android:layout_height="48dp"
-            android:layout_marginLeft="5dp"
-            android:background="@drawable/ic_input_rounded"
-            android:padding="12dp"
-            android:textColor="#000000"
-            android:textColorHint="#888888"
-            android:hint="@string/mensajeRepitaContraseña_Input"
-            />
-
-
-        <!--ACEPTAR TERMINOS Y CONDICIONES-->
-        <CheckBox
-            android:id="@+id/checkTerminos"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Acepto los términos y condiciones"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="25dp">
 
-            />
+
+            <!--CONTENEDOR PRINCIPAL FORMULARIO REGISTRO-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <!--TITULO FORMULARIO-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/titulo_formulario_registro"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+                <!--TITULO NOMBRE COMPLETO-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/nombre_completo"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+                <!--INPUT NOMBRE COMPLETO-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="400dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/ic_input_rounded"
+                    android:hint="@string/mensajeNombreCompleto_Input"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/input_gray" />
 
 
+                <!--TITULO APELLIDOS COMPLETOS-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/apellidos_completos"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+                <!--INPUT APELLIDOS COMPLETOS-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="400dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/ic_input_rounded"
+                    android:hint="@string/mensajeApellidosCompletos_Input"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/input_gray" />
 
-    </LinearLayout>
+                <!--TITULO CORREO-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/correo_electronico"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+                <!--INPUT CORREO-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="400dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/ic_input_rounded"
+                    android:hint="@string/mensajeCorreo_Input"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/input_gray" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnIngresarLogin"
-            android:layout_width="170dp"
-            android:layout_height="60dp"
-            android:text="Login"
-            android:textColor="@color/red_letter_buttoms"
-            android:textSize="24sp"
-            android:layout_gravity="center"
-            app:backgroundTint="@android:color/white"
-            app:cornerRadius="30dp"
-            app:strokeColor="@color/red_border_input"
-            app:strokeWidth="3dp"
-            />
+                <!--TITULO CONTRASEÑA-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/contraseña"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+                <!--INPUT CONTRASEÑA-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="400dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/ic_input_rounded"
+                    android:hint="@string/mensajeContraseña_Input"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/input_gray" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnRegistarLogin"
-            android:layout_width="170dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="20dp"
-            android:text="Registrar"
-            android:textColor="@color/red_letter_buttoms"
-            android:textSize="24sp"
-            android:layout_gravity="center"
-            app:backgroundTint="@android:color/white"
-            app:cornerRadius="30dp"
-            app:strokeColor="@color/red_border_input"
-            app:strokeWidth="3dp"
-            />
+                <!--TITULO REPITA CONTRASEÑA-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/repita_la_contraseña"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+                <!--INPUT REPITA CONTRASEÑA-->
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="400dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/ic_input_rounded"
+                    android:hint="@string/mensajeRepitaContraseña_Input"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/input_gray" />
 
-    </LinearLayout>
+
+                <!--ACEPTAR TERMINOS Y CONDICIONES-->
+                <CheckBox
+                    android:id="@+id/checkTerminos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terminos_y_condiciones"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnIngresarLogin"
+                    android:layout_width="170dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:text="@string/login"
+                    android:textColor="@color/red_letter_buttoms"
+                    android:textSize="24sp"
+                    app:backgroundTint="@android:color/white"
+                    app:cornerRadius="30dp"
+                    app:strokeColor="@color/red_border_input"
+                    app:strokeWidth="3dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnRegistarLogin"
+                    android:layout_width="170dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/registrar"
+                    android:textColor="@color/red_letter_buttoms"
+                    android:textSize="24sp"
+                    app:backgroundTint="@android:color/white"
+                    app:cornerRadius="30dp"
+                    app:strokeColor="@color/red_border_input"
+                    app:strokeWidth="3dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

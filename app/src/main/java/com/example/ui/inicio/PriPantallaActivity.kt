@@ -1,18 +1,16 @@
-package com.example.talle2_juanmorales
+package com.example.ui.inicio
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import android.os.Handler
 import android.os.Looper
-import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import com.example.ui.R
 
-class MainActivity : AppCompatActivity() {
+class PriPantallaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_pripantalla)
 
         // Temporizador para ir a IntroActivity después de 3 segundos
         Handler(Looper.getMainLooper()).postDelayed({

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ui">
 
     <application
         android:allowBackup="true"
@@ -11,8 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Talle2_JuanMorales">
+
         <activity
-            android:name=".MainActivity"
+            android:name=".inicio.PriPantallaActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,16 +22,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".IntroActivity"
-            android:exported="true"/>
-
-        <activity android:name=".LoginActivity"
-            android:exported="true"/>
-
-        <activity android:name=".RegistroActivity"
-            android:exported="true"/>
-
+        <activity
+            android:name=".inicio.IntroActivity"
+            android:exported="true" />
+        <activity
+            android:name=".auth.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".auth.RegistroActivity"
+            android:exported="true" />
+        <activity
+            android:name=".main.MainActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

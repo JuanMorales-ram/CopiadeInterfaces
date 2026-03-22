@@ -28,5 +28,21 @@
     <string name="mensajeCorreo_Input">Digite su correo electronico</string>
     <string name="mensajeContraseña_Input">Digite su contraseña</string>
     <string name="mensajeRepitaContraseña_Input">Repita la contraseña</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mi_tienda">Mi Tienda</string>
+    <string name="inicio">Inicio</string>
+    <string name="catalogo">catalogo</string>
+    <string name="favoritos">favoritos</string>
+    <string name="admin">admin</string>
+    <string name="carrito">carrito</string>
+    <string name="usuarios">usuarios</string>
+    <string name="perfil">perfil</string>
+    <string name="navigation_drawer_open">Menu Abierto</string>
+    <string name="navigation_drawer_close">Menu Cerrado</string>
+    <string name="terminos_y_condiciones">Acepto los términos y condiciones</string>
+    <string name="login">Login</string>
+    <string name="registrar">Registrar</string>
+    <string name="logo">Logo</string>
 
 </resources>

@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.talle2_juanmorales"
+    namespace = "com.example.ui"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1

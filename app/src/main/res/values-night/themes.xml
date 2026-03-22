@@ -4,4 +4,9 @@
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
+    <style name="Theme.Talle2_JuanMorales" parent="Base.Theme.Talle2_JuanMorales">
+
+        <item name="colorPrimary">@color/background_primary</item>
+
+    </style>
 </resources>

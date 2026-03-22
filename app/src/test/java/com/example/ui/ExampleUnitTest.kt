@@ -1,4 +1,4 @@
-package com.example.talle2_juanmorales
+package com.example.ui
 
 import org.junit.Test
 

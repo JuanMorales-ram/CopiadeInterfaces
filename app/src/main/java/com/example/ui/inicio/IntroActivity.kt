@@ -1,12 +1,13 @@
-package com.example.talle2_juanmorales
+package com.example.ui.inicio
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.ui.R
+import com.example.ui.auth.LoginActivity
+import com.example.ui.auth.RegistroActivity
 
 class IntroActivity : AppCompatActivity() {
 
