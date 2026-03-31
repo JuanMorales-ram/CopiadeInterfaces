@@ -44,5 +44,8 @@
     <string name="login">Login</string>
     <string name="registrar">Registrar</string>
     <string name="logo">Logo</string>
+    <string name="imagen_del_producto">Imagen del producto</string>
+    <string name="agregar_al_carrito">Agregar al carrito</string>
+    <string name="productos_destacado">Productos Destacado</string>
 
 </resources>

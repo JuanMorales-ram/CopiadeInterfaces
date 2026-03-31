@@ -79,7 +79,7 @@
                     android:textSize="15sp" />
                 <!--INPUT NOMBRE COMPLETO-->
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="400dp"
+                    android:layout_width="350dp"
                     android:layout_height="48dp"
                     android:layout_marginStart="5dp"
                     android:background="@drawable/ic_input_rounded"
@@ -100,7 +100,7 @@
                     android:textSize="15sp" />
                 <!--INPUT APELLIDOS COMPLETOS-->
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="400dp"
+                    android:layout_width="350dp"
                     android:layout_height="48dp"
                     android:layout_marginStart="5dp"
                     android:background="@drawable/ic_input_rounded"
@@ -120,7 +120,7 @@
                     android:textSize="15sp" />
                 <!--INPUT CORREO-->
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="400dp"
+                    android:layout_width="350dp"
                     android:layout_height="48dp"
                     android:layout_marginStart="5dp"
                     android:background="@drawable/ic_input_rounded"
@@ -141,7 +141,7 @@
                     android:textSize="15sp" />
                 <!--INPUT CONTRASEÑA-->
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="400dp"
+                    android:layout_width="350dp"
                     android:layout_height="48dp"
                     android:layout_marginStart="5dp"
                     android:background="@drawable/ic_input_rounded"
@@ -161,7 +161,7 @@
                     android:textSize="15sp" />
                 <!--INPUT REPITA CONTRASEÑA-->
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="400dp"
+                    android:layout_width="350dp"
                     android:layout_height="48dp"
                     android:layout_marginStart="5dp"
                     android:background="@drawable/ic_input_rounded"
